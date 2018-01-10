@@ -24,9 +24,14 @@
 .sidebar {
   background-color: var(--color-grey-dark-1);
   flex: 0 0 18%; // will not shrink or grow -- 18% width
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .view {
   background-color: #fff;
   flex: 1; // will grow to fill all available remaining space
+  background: #eee;
+  height: 80rem;
 }
