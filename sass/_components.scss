@@ -199,3 +199,53 @@ USER NAVIGATION
     display: block;
   }
 }
+
+
+
+/*=================
+OVERVIEW
+=================*/
+.overview {
+  display: flex;
+  border: 1px solid;
+  align-items: center;
+
+  &__heading {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+
+  &__stars {
+    margin-right: auto; // margin will fill all available space to the right (we don't want flex: 1)
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+
+  }
+
+  &__rating {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__rating-average {
+    font-size: 2rem;
+  }
+
+  &__rating-count {
+
+  }
+}

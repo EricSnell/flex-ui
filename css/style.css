@@ -172,6 +172,34 @@ USER NAVIGATION
     width: 100%;
     display: block; }
 
+/*=================
+OVERVIEW
+=================*/
+.overview {
+  display: flex;
+  border: 1px solid;
+  align-items: center; }
+  .overview__heading {
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 2px; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon-star, .overview__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
+  .overview__rating {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .overview__rating-average {
+    font-size: 2rem; }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
