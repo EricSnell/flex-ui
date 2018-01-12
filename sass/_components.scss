@@ -357,3 +357,29 @@ LIST
 /*=================
 RECOMMENDATIONS
 =================*/
+.recommend {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center;
+
+  &__count {
+    margin-right: auto; // pushes friend images to the right
+  }
+
+  &__friends {
+
+  }
+
+  &__photo {
+    height: 4rem;
+    widows: 4rem;
+    border-radius: 50%;
+    box-sizing: content-box;
+    border: 3px solid #fff;
+  }
+
+  &__photo:not(:last-child) {
+    margin-right: -1.5rem;
+  }
+}
