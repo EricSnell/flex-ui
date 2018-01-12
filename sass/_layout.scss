@@ -36,6 +36,7 @@
 }
 
 .details {
+  font-size: 1.4rem;
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
@@ -48,10 +49,8 @@
   padding: 3rem;
   flex: 0 0 60%; // occupy 60% of container
   margin-right: 4.5rem;
-  font-size: 1.4rem;
 }
 
 .user-reviews {
-  background-color: aquamarine;
   flex: 1; // occupy remaining space
 } 
