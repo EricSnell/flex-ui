@@ -387,6 +387,14 @@ RECOMMENDATIONS
     border-radius: 50%;
     box-sizing: content-box;
     border: 3px solid #fff;
+    position: relative;
+    transition: all .2s;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 100;
+      transform: translateY(-4px);
+    }
   }
 
   &__photo:not(:last-child) {

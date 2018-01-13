@@ -301,7 +301,13 @@ RECOMMENDATIONS
     widows: 4rem;
     border-radius: 50%;
     box-sizing: content-box;
-    border: 3px solid #fff; }
+    border: 3px solid #fff;
+    position: relative;
+    transition: all .2s;
+    cursor: pointer; }
+    .recommend__photo:hover {
+      z-index: 100;
+      transform: translateY(-4px); }
   .recommend__photo:not(:last-child) {
     margin-right: -1.5rem; }
 
