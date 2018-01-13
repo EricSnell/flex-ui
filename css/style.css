@@ -129,8 +129,8 @@ USER NAVIGATION
     align-items: center; }
   .user-nav__user {
     position: relative; }
-  .user-nav__user:hover ~ .user-nav__submenu--user,
-  .user-nav__icon-box--msg:hover ~ .user-nav__submenu--msg {
+  .user-nav__user:hover .user-nav__submenu,
+  .user-nav__icon-box--msg:hover .user-nav__submenu {
     visibility: visible; }
   .user-nav__user-photo {
     height: 3.75rem;
@@ -138,11 +138,12 @@ USER NAVIGATION
     margin-right: 1rem; }
   .user-nav__submenu {
     min-width: 30rem;
-    background-color: var(--color-grey-light-2);
+    background-color: red;
     position: absolute;
     top: 100%;
     right: 0;
-    visibility: hidden; }
+    visibility: hidden;
+    z-index: 1000; }
 
 .side-nav {
   font-size: 1.4rem;

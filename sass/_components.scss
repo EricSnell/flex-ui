@@ -124,8 +124,8 @@ USER NAVIGATION
     position: relative;
   }
 
-  &__user:hover ~ &__submenu--user,
-  &__icon-box--msg:hover ~ &__submenu--msg {
+  &__user:hover &__submenu,
+  &__icon-box--msg:hover &__submenu {
     visibility: visible;
   }
 
@@ -137,11 +137,13 @@ USER NAVIGATION
 
   &__submenu {
     min-width: 30rem;
-    background-color: var(--color-grey-light-2);
+    //background-color: var(--color-grey-light-2);
+    background-color: red;
     position: absolute;
     top: 100%;
     right: 0;
     visibility: hidden;
+    z-index: 1000;
   }
 }
 
