@@ -15,8 +15,12 @@
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3); // box shadow
   --shadow-light: 0 2rem 5rem rgba(0, 0, 0, .06);
   --line: 1px solid var(--color-grey-light-2); // border bottom
-
 }
+
+// We need to use ems for our media queries, and CSS variables cannot be used
+$bp-largest: 75em;    // 1200px/16 
+$bp-large: 68.75em;   // 1100px/16
+$bp-medium: 65.25em;  // 900px/16
 
 * {
   margin: 0;
@@ -26,6 +30,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // So 1rem = 10px (10/16-default browser size = 62.5)
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;  // 8/16
+  }
 }
 
 *,
