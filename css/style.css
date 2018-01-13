@@ -316,6 +316,8 @@ RECOMMENDATIONS
   align-items: center; }
   .recommend__count {
     margin-right: auto; }
+  .recommend__friends {
+    display: flex; }
   .recommend__photo {
     height: 4rem;
     widows: 4rem;
@@ -389,6 +391,9 @@ CTA
   padding: 3.5rem 0;
   text-align: center;
   background: #fff; }
+  @media only screen and (max-width: 56.25em) {
+    .cta {
+      padding: 2.5rem 0; } }
   .cta__header {
     text-transform: uppercase;
     font-size: 2rem;
