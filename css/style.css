@@ -54,6 +54,11 @@ SEARCH
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 0 0 100%;
+      background-color: var(--color-grey-light-2); } }
   .search__input {
     font-family: inherit;
     font-size: inherit;
@@ -212,15 +217,29 @@ OVERVIEW
   border-bottom: var(--line);
   align-items: center;
   background: #fff; }
+  @media only screen and (max-width: 25rem) {
+    .overview {
+      flex-wrap: wrap;
+      justify-content: space-around; } }
   .overview__heading {
     text-transform: uppercase;
     font-size: 2.25rem;
     font-weight: 100;
     letter-spacing: 1px;
     padding: 1.5rem 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__heading {
+        font-size: 1.8rem;
+        padding: 1.25rem 2rem; } }
+    @media only screen and (max-width: 25rem) {
+      .overview__heading {
+        padding: 1rem 0; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
+    @media only screen and (max-width: 25rem) {
+      .overview__stars {
+        margin-right: 0; } }
   .overview__icon-star, .overview__icon-location {
     width: 1.75rem;
     height: 1.75rem;
@@ -241,13 +260,27 @@ OVERVIEW
     justify-content: center;
     align-items: center;
     align-self: stretch; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating {
+        padding: 0 1.5rem; } }
+    @media only screen and (max-width: 25rem) {
+      .overview__rating {
+        order: 1;
+        flex: 0 0 100%;
+        margin-left: 0; } }
   .overview__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -5px; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating-average {
+        font-size: 1.8rem; } }
   .overview__rating-count {
     font-size: .8rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 37.5em) {
+      .overview__rating-count {
+        font-size: .5rem; } }
 
 /*=================
 INLINE BUTTON
@@ -463,6 +496,11 @@ CTA
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 31.25em) {
+    .header {
+      flex-wrap: wrap;
+      align-content: space-around;
+      height: 11rem; } }
 
 .content {
   display: flex; }

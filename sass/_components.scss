@@ -18,6 +18,12 @@ SEARCH
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
+
   &__input {
     font-family: inherit; // inputs don't automatically inherit font
     font-size: inherit;
@@ -245,17 +251,35 @@ OVERVIEW
   align-items: center;
   background: #fff;
 
+  @media only screen and (max-width: $bp-mobile) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
   &__heading {
     text-transform: uppercase;
     font-size: 2.25rem;
     font-weight: 100;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      padding: 1rem 0;
+    }
   }
 
   &__stars {
     margin-right: auto; // margin will fill all available space to the right (we don't want flex: 1)
     display: flex; // removes small space under each star svg
+
+    @media only screen and (max-width: $bp-mobile) {
+      margin-right: 0;
+    }
   }
 
   &__icon-star,
@@ -272,7 +296,7 @@ OVERVIEW
   }
 
   &__icon-location {
-    margin-right: .5rem;
+    margin-right: .5rem;  
   }
 
   &__rating {
@@ -285,17 +309,36 @@ OVERVIEW
     justify-content: center;
     align-items: center;
     align-self: stretch;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile) {
+      order: 1;
+      flex: 0 0 100%;
+      margin-left: 0;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -5px;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: .8rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: .5rem;
+    }
+    
   }
 }
 
