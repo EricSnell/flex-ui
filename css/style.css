@@ -307,7 +307,8 @@ RECOMMENDATIONS
     cursor: pointer; }
     .recommend__photo:hover {
       z-index: 100;
-      transform: translateY(-4px); }
+      transform: translateY(-4px);
+      border-color: var(--color-primary-light); }
   .recommend__photo:not(:last-child) {
     margin-right: -1.5rem; }
 
