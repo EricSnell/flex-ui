@@ -130,7 +130,7 @@ USER NAVIGATION
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem; }
-  @media only screen and (max-width: 65.25em) {
+  @media only screen and (max-width: 56.25em) {
     .side-nav {
       display: flex;
       margin-top: 0; } }
@@ -138,10 +138,10 @@ USER NAVIGATION
     position: relative; }
     .side-nav__item:not(:last-child) {
       margin-bottom: .5rem; }
-      @media only screen and (max-width: 65.25em) {
+      @media only screen and (max-width: 56.25em) {
         .side-nav__item:not(:last-child) {
           margin: 0; } }
-    @media only screen and (max-width: 65.25em) {
+    @media only screen and (max-width: 56.25em) {
       .side-nav__item {
         flex: 1; } }
   .side-nav__item::before {
@@ -169,7 +169,7 @@ USER NAVIGATION
     align-items: center;
     position: relative;
     z-index: 10; }
-    @media only screen and (max-width: 65.25em) {
+    @media only screen and (max-width: 56.25em) {
       .side-nav__link:link, .side-nav__link:visited {
         justify-content: center;
         padding: 2rem; } }
@@ -342,6 +342,9 @@ REVIEWS
   margin-bottom: 3.5rem;
   position: relative;
   overflow: hidden; }
+  @media only screen and (max-width: 56.25em) {
+    .review {
+      padding: 2rem; } }
   .review__text {
     margin-bottom: 2rem;
     position: relative;
@@ -448,7 +451,7 @@ CTA
 
 .content {
   display: flex; }
-  @media only screen and (max-width: 65.25em) {
+  @media only screen and (max-width: 56.25em) {
     .content {
       flex-direction: column; } }
 
@@ -470,6 +473,9 @@ CTA
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line); }
+  @media only screen and (max-width: 56.25em) {
+    .details {
+      padding: 3rem; } }
 
 .description {
   background-color: #fff;
@@ -477,6 +483,10 @@ CTA
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .description {
+      padding: 2rem;
+      margin-right: 3rem; } }
 
 .user-reviews {
   flex: 1;

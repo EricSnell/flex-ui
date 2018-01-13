@@ -437,6 +437,10 @@ REVIEWS
   position: relative;
   overflow: hidden;
 
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+  }
+
   &__text {
     margin-bottom: 2rem;
     position: relative; // to set z index to overlap quotation 

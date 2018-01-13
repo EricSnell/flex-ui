@@ -51,6 +51,10 @@
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
   border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
 }
 
 .description {
@@ -59,6 +63,11 @@
   padding: 3rem;
   flex: 0 0 60%; // occupy 60% of container
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews {
