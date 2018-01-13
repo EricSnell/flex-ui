@@ -129,9 +129,6 @@ USER NAVIGATION
     align-items: center; }
   .user-nav__user {
     position: relative; }
-  .user-nav__user:hover .user-nav__submenu,
-  .user-nav__icon-box--msg:hover .user-nav__submenu {
-    visibility: visible; }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%;
@@ -142,8 +139,24 @@ USER NAVIGATION
     position: absolute;
     top: 100%;
     right: 0;
-    visibility: hidden;
     z-index: 1000; }
+  .user-nav__submenu > * {
+    list-style: none; }
+
+.inbox {
+  padding: 2rem; }
+  .inbox__item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.2rem; }
+  .inbox__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100px; }
+
+.user-menu {
+  display: none; }
 
 .side-nav {
   font-size: 1.4rem;

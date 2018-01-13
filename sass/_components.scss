@@ -126,7 +126,7 @@ USER NAVIGATION
 
   &__user:hover &__submenu,
   &__icon-box--msg:hover &__submenu {
-    visibility: visible;
+    // visibility: visible;
   }
 
   &__user-photo {
@@ -142,10 +142,46 @@ USER NAVIGATION
     position: absolute;
     top: 100%;
     right: 0;
-    visibility: hidden;
+    //visibility: hidden;
     z-index: 1000;
   }
+
+  &__submenu > * {
+    list-style: none;
+  }
 }
+  
+
+.inbox {
+  padding: 2rem;
+
+  &__item {
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.2rem;
+  }
+
+  &__img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100px;
+  }
+
+  &__text-preview {
+
+  }
+}
+
+
+.user-menu {
+  display: none;
+  &__item {
+
+  }
+}
+
+
 
 
 
