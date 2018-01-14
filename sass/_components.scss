@@ -132,10 +132,19 @@ USER NAVIGATION
 
   &__user:hover &__submenu {
     width: 22rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100vw;
+    }
   }
 
   &__icon-box--msg:hover &__submenu {
     width: 32rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      width: 100vw;
+      right: -15.32rem;
+    }
   }
 
   &__user-photo {
@@ -155,6 +164,7 @@ USER NAVIGATION
     border-radius: 3px;
     box-shadow: var(--shadow-dark);
     transition: opacity .2s;
+
   }
 
   &__submenu > * {

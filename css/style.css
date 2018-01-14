@@ -135,8 +135,15 @@ USER NAVIGATION
     opacity: 1; }
   .user-nav__user:hover .user-nav__submenu {
     width: 22rem; }
+    @media only screen and (max-width: 31.25em) {
+      .user-nav__user:hover .user-nav__submenu {
+        width: 100vw; } }
   .user-nav__icon-box--msg:hover .user-nav__submenu {
     width: 32rem; }
+    @media only screen and (max-width: 31.25em) {
+      .user-nav__icon-box--msg:hover .user-nav__submenu {
+        width: 100vw;
+        right: -15.32rem; } }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%;
