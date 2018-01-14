@@ -293,10 +293,9 @@ USER NAVIGATION
     align-items: center;
     position: absolute;
     top: 100%;
-    padding-left: 1.7rem;
+    padding: 0 1.7rem;
     text-align: center;
     background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
-    width: 50%;
     color: #fff;
     font-weight: 300;
     font-size: 1.6rem;
