@@ -271,10 +271,49 @@ USER NAVIGATION
       display: none; } }
 
 .gallery {
-  display: flex; }
+  display: flex;
+  overflow: hidden; }
+  .gallery__item {
+    position: relative; }
   .gallery__photo {
     width: 100%;
-    display: block; }
+    display: block;
+    cursor: pointer;
+    transition: all .1s;
+    backface-visibility: hidden; }
+  .gallery__item:hover .gallery__text {
+    transform: translateY(-100%);
+    opacity: 1;
+    visibility: visible; }
+  .gallery__item:hover .gallery__photo {
+    filter: grayscale(90%); }
+  .gallery__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    padding-left: 1.7rem;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    width: 50%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s; }
+  .gallery__stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .7rem; }
+  .gallery__icon-star {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: #fff;
+    box-sizing: inherit; }
 
 /*=================
 OVERVIEW

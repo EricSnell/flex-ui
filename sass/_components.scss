@@ -337,10 +337,61 @@ USER NAVIGATION
 //////////////////////////////  MAIN CONTENT
 .gallery {
   display: flex;
+  overflow: hidden;
+  
+  &__item {
+    position: relative;
+  }
 
   &__photo {
     width: 100%;
     display: block;
+    cursor: pointer;
+    transition: all .1s;
+    backface-visibility: hidden;
+  }
+
+  &__item:hover &__text {
+    transform: translateY(-100%);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__item:hover &__photo {
+    filter: grayscale(90%);
+  }
+
+  &__text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    padding-left: 1.7rem;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--color-primary-light), var(--color-primary-dark));
+    width: 50%;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+
+  &__stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .7rem;
+  }
+
+  &__icon-star {
+    width: 1.3rem;
+    height: 1.3rem;
+    fill: #fff;
+    box-sizing: inherit;
   }
 }
 
