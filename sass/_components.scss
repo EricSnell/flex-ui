@@ -126,7 +126,16 @@ USER NAVIGATION
 
   &__user:hover &__submenu,
   &__icon-box--msg:hover &__submenu {
-    // visibility: visible;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__user:hover &__submenu {
+    width: 22rem;
+  }
+
+  &__icon-box--msg:hover &__submenu {
+    width: 32rem;
   }
 
   &__user-photo {
@@ -136,13 +145,16 @@ USER NAVIGATION
   }
 
   &__submenu {
-    min-width: 24rem;
-    background-color: var(--color-grey-light-2);
+    background-color: #fff;
     position: absolute;
     top: 100%;
     right: 0;
-    //visibility: hidden;
+    visibility: hidden;
+    opacity: 0;
     z-index: 1000;
+    border-radius: 3px;
+    box-shadow: var(--shadow-dark);
+    transition: opacity .2s;
   }
 
   &__submenu > * {
@@ -152,7 +164,6 @@ USER NAVIGATION
   
 
 .inbox {
-  display: none;
   padding: 2rem 1.3rem;
 
   &__item {
@@ -162,12 +173,16 @@ USER NAVIGATION
 
     &:not(:last-child) {
       margin-bottom: 2.2rem;
-      border-bottom: 1px solid #ddd;;
+      border-bottom: 1px solid #ddd;
     }    
   }
 
   &__item:hover &__img {
     border: 3px solid var(--color-primary-light);
+  }
+
+  &__item:hover &__text-preview {
+    color: #333;
   }
 
   &__img {
@@ -176,12 +191,14 @@ USER NAVIGATION
     border-radius: 100px;
     margin-right: 1rem;
     border: 3px solid #fff;
-    transition: all .2s;
+    transition: border .3s;
   }
 
   &__text-preview {
+    color: var(--color-grey-dark-3);
     font-size: 1.2rem;
     line-height: 1.3;
+    transition: color .3s;
   }
 }
 
@@ -193,7 +210,7 @@ USER NAVIGATION
     padding: 1.3rem;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    transition: all .2s;
+    transition: transform .2s;
 
     &:hover {
       color: var(--color-primary-light);
