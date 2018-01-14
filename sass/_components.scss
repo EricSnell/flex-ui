@@ -136,7 +136,7 @@ USER NAVIGATION
   }
 
   &__submenu {
-    min-width: 32rem;
+    min-width: 24rem;
     background-color: var(--color-grey-light-2);
     position: absolute;
     top: 100%;
@@ -152,6 +152,7 @@ USER NAVIGATION
   
 
 .inbox {
+  display: none;
   padding: 2rem 1.3rem;
 
   &__item {
@@ -186,9 +187,18 @@ USER NAVIGATION
 
 
 .user-menu {
-  display: none;
-  &__item {
 
+  &__item {
+    font-size: 1.5rem;
+    padding: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all .2s;
+
+    &:hover {
+      color: var(--color-primary-light);
+      transform: translateX(3px);
+    }
   }
 }
 
