@@ -136,9 +136,8 @@ USER NAVIGATION
   }
 
   &__submenu {
-    min-width: 30rem;
-    //background-color: var(--color-grey-light-2);
-    background-color: red;
+    min-width: 32rem;
+    background-color: var(--color-grey-light-2);
     position: absolute;
     top: 100%;
     right: 0;
@@ -153,23 +152,35 @@ USER NAVIGATION
   
 
 .inbox {
-  padding: 2rem;
+  padding: 2rem 1.3rem;
 
   &__item {
-    border: 1px solid;
     display: flex;
     align-items: center;
-    margin-bottom: 2.2rem;
+    padding-bottom: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 2.2rem;
+      border-bottom: 1px solid #ddd;;
+    }    
+  }
+
+  &__item:hover &__img {
+    border: 3px solid var(--color-primary-light);
   }
 
   &__img {
     height: 5rem;
     width: 5rem;
     border-radius: 100px;
+    margin-right: 1rem;
+    border: 3px solid #fff;
+    transition: all .2s;
   }
 
   &__text-preview {
-
+    font-size: 1.2rem;
+    line-height: 1.3;
   }
 }
 
