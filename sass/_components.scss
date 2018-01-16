@@ -185,6 +185,10 @@ USER NAVIGATION
       margin-bottom: 2.2rem;
       border-bottom: 1px solid #ddd;
     }    
+
+    @media only screen and (max-width: $bp-smallest) {
+      padding: 2rem;
+    }
   }
 
   &__item:hover &__img {
@@ -210,6 +214,10 @@ USER NAVIGATION
     line-height: 1.3;
     transition: color .3s;
   }
+
+  @media only screen and (max-width: $bp-smallest) {
+    padding-left: 2.5rem;
+  }
 }
 
 
@@ -225,6 +233,11 @@ USER NAVIGATION
     &:hover {
       color: var(--color-primary-light);
       transform: translateX(3px);
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+      text-align: center;
+      padding: 2.5rem;
     }
   }
 }
@@ -377,8 +390,6 @@ USER NAVIGATION
     opacity: 0;
     visibility: hidden;
     transition: all 0.3s;
-
-    @media only screen and (max-width: $gp)
   }
 
   &__stars {

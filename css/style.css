@@ -171,6 +171,9 @@ USER NAVIGATION
     .inbox__item:not(:last-child) {
       margin-bottom: 2.2rem;
       border-bottom: 1px solid #ddd; }
+    @media only screen and (max-width: 31.25em) {
+      .inbox__item {
+        padding: 2rem; } }
   .inbox__item:hover .inbox__img {
     border: 3px solid var(--color-primary-light); }
   .inbox__item:hover .inbox__text-preview {
@@ -187,6 +190,9 @@ USER NAVIGATION
     font-size: 1.2rem;
     line-height: 1.3;
     transition: color .3s; }
+  @media only screen and (max-width: 31.25em) {
+    .inbox {
+      padding-left: 2.5rem; } }
 
 .user-menu__item {
   font-size: 1.5rem;
@@ -197,6 +203,10 @@ USER NAVIGATION
   .user-menu__item:hover {
     color: var(--color-primary-light);
     transform: translateX(3px); }
+  @media only screen and (max-width: 31.25em) {
+    .user-menu__item {
+      text-align: center;
+      padding: 2.5rem; } }
 
 .side-nav {
   font-size: 1.4rem;
